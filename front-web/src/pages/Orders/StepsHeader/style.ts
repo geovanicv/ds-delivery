@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.header`
   ${({theme}) => css`
-    background-color: ${theme.colors.lightGray};
+    background-color: ${theme.colors.white};
   `}
 `;
 
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
 
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   height: 133px;
   padding: 0 20px;
@@ -23,13 +23,10 @@ export const Title = styled.h1`
     margin-right: 10rem;
     text-transform: uppercase;
   `}
-
 `;
 
 export const StepsContainer = styled.ul`
   list-style: none;
-
-  
 `;
 
 export const Step = styled.li`
