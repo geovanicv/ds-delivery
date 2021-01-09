@@ -3,7 +3,6 @@ import styled, {css} from 'styled-components'
 export const Container = styled.nav`
   ${({ theme }) => css`
     background-color: ${theme.colors.primary};
-    height: 7rem;
   `}
 `;
 
