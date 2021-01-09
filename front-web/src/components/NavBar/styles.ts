@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled, {css} from 'styled-components'
 
 export const Container = styled.nav`
@@ -16,7 +17,7 @@ export const Wrapper = styled.div`
   align-items: center;  
 `;
 
-export const LogoTitle = styled.a`
+export const LogoTitle = styled(Link)`
   ${({ theme }) => css`
     font-weight: ${theme.font.bold};
     font-size: ${theme.font.sizes.xlarge};

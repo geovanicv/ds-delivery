@@ -7,7 +7,7 @@ function NavBar() {
    <S.Container>
      <S.Wrapper>
         <Logo />
-        <S.LogoTitle href="home">DS delivery</S.LogoTitle>
+        <S.LogoTitle to="/">DS delivery</S.LogoTitle>
      </S.Wrapper>
    </S.Container>
   );

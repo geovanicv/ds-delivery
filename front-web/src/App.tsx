@@ -1,11 +1,13 @@
 import { ThemeProvider } from 'styled-components';
-import LandingPage from './pages/LandingPage';
+
+import Routes from './Routes';
+
 import GlobalStyle from './styles/global'
 import theme from './styles/theme'
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <LandingPage />
+    <Routes />   
     <GlobalStyle />
   </ThemeProvider>
 
