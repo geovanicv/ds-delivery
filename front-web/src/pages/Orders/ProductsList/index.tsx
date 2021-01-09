@@ -13,7 +13,6 @@ const ProductsList = ({products}: Props) => {
           {products.map(product => (
             <ProductCard key={product.id} product={product}/>
           ))}
-         
         </S.Wrapper>
       </S.Container>
   ) 

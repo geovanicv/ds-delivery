@@ -22,7 +22,7 @@ export const LogoTitle = styled(Link)`
     font-weight: ${theme.font.bold};
     font-size: ${theme.font.sizes.xlarge};
     color: ${theme.colors.white};
-    margin-left: ${theme.spacings.xxsmall};
+    margin-left: 1.2rem;
     text-decoration: none;
   `}
 `;
