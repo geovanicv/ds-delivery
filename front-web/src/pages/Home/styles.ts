@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components'
 
 export const Container = styled.main`
@@ -78,7 +79,7 @@ export const Description = styled.div`
   }
 `;
 
-export const OrderButton = styled.a`
+export const OrderButton = styled(Link)`
   ${({theme}) => css`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};

@@ -10,7 +10,7 @@ const Home = () => {
             <S.Description>
               Escolha o seu pedido  e em poucos minutos levaremoss na sua porta
             </S.Description>
-            <S.OrderButton href="home">Fazer pedido</S.OrderButton>
+            <S.OrderButton to="/orders">Fazer pedido</S.OrderButton>
           </S.Actions>
           <ImageHero />
         </S.Wrapper>
