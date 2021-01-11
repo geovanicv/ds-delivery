@@ -1,7 +1,17 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 
-export const Container = styled.main`
-  ${({theme}) => css`
+type Props = {
+  isSelected: boolean
+}
+
+const modifiers = {
+  selected: (theme: DefaultTheme) => css`
+    border: 2px solid ${theme.colors.primary};
+  `
+}
+
+export const Container = styled.main<Props>`
+  ${({theme, isSelected}) => css`
     background-color: ${theme.colors.white};
     max-height: 46rem;
     min-height: 46rem;
@@ -9,6 +19,8 @@ export const Container = styled.main`
     padding: 1rem;
     border-radius: ${theme.border.radius};
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+    ${isSelected && modifiers.selected(theme)}
 
     &:hover {
       border: 2px solid ${theme.colors.primary};

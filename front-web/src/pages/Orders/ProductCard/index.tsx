@@ -1,22 +1,18 @@
+import { formatPrice } from '../helpers'
 import { Product } from '../types'
 import * as S from './styles'
 
 type Props = {
   product: Product
+  onSelectProduct: (product: Product) => void
+  isSelected: boolean
 }
 
-function formatPrice(price: number) {
-  const formatter = new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  })
 
-  return formatter.format(price)
-}
 
-const ProductCard = ({product}: Props) => {
+const ProductCard = ({product, onSelectProduct, isSelected}: Props) => {
   return (
-      <S.Container>
+      <S.Container isSelected={isSelected} onClick={() => onSelectProduct(product)}>
         <S.Title>{product.name}</S.Title>
         <S.CardImage src={product.imageUrl} alt={product.name} />
         <S.Price>{formatPrice(product.price)}</S.Price>
