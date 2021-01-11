@@ -13,6 +13,7 @@ export default createGlobalStyle`
       font-size: 62.5%;
     }
     body {
+      background-color: ${theme.colors.lightGray};
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
       -webkit-font-smoothing: antialiased;
