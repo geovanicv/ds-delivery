@@ -9,7 +9,7 @@ export const Container = styled.main`
 export const Wrapper = styled.div`
  > h1 {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem;
     ${({theme}) => css`
       color: ${theme.colors.gray};
       font-size: ${theme.font.sizes.xlarge};

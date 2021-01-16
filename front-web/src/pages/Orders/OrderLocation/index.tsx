@@ -7,8 +7,8 @@ import { OrderLocationData } from '../types';
 import * as S from './styles'
 
 const initialPosition = {
-  lat: -15.7215857,
-  lng: -48.0073978
+  lat: -15.793445,
+  lng: -47.8833558
 }
 
 type Place = {
