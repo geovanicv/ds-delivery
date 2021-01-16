@@ -57,16 +57,11 @@ const handleSubmit = () => {
       <S.Container>
         <S.Wrapper>
           <StepsHeader />
-          {!!products ? 
-            <h1>Carregando Produtos...</h1> :
-            
             <ProductsList 
             products={products}
             onSelectProduct={handleSelectProduct}
             selectedProducts={selectedProducts}
-          />  
-          }
-          
+          />          
           <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
           <OrderSummary 
             amount={selectedProducts.length} 
