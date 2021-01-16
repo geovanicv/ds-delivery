@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Front-web DS-Delivery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre
+Frontend-web da aplicação DevSuperior-Delivery (DS-Delivery). Tem como objetivo desenvolver skills utilizando a linguagem javascript junto com o typescript e a biblioteca ReactJs.
 
-## Available Scripts
+Nesta versão web da aplicação o sistema lista produtos disponíveis para compra. O usuário seleciona os produtos e cria um pedido que será enviado para processamento pela API desenvolvida. O sistema deve retornar a quantidade de itens selecionados e o valor total do pedido. O usuário também seleciona o endereço de entrega. 
 
-In the project directory, you can run:
+## [Deploy no Netlify](https://ds-delivery-geovanicv.netlify.app/) 
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tecnologias
+- Typescriot
+- ReactJS
+- Axios
+- LeafLet - API para o mapa
+- styled-components
 
-### `yarn test`
+## Executando o projeto
+Para executar o projeto será necessário a instalação das seguintes ferramentas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node v14.15.4
+- Yarn v1.22.5
 
-### `yarn build`
+Depois de clonar esse repositório, entre na pasta front-web e execute
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+# instalação das dependências
+$ yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# startar a aplicação web
+$ yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+Made with :purple_heart: by Geovani Cavalcante :wave: [Get in touch!](https://www.linkedin.com/in/geovani-cv/)
