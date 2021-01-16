@@ -15,6 +15,9 @@ export const Wrapper = styled.div`
   height: 133px;
   padding: 0 20px;
 
+  @media (max-width: 650px) {
+  }
+
 `;
 
 export const Title = styled.h1`
@@ -23,6 +26,24 @@ export const Title = styled.h1`
     margin-right: 10rem;
     text-transform: uppercase;
   `}
+
+  @media (max-width: 650px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.xlarge};
+  `}
+  }
+
+  @media (max-width: 550px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.medium};
+  `}
+  }
+
+  @media (max-width: 450px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.small};
+  `}
+  }
 `;
 
 export const StepsContainer = styled.ul`
@@ -47,6 +68,34 @@ export const Step = styled.li`
       text-transform: uppercase;
     }
   `}
-`;
 
-export const ButtonStatus = styled.div``;
+  @media (max-width: 650px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.medium};
+
+      h1 {
+        font-size: ${theme.font.sizes.medium};
+      }
+    `}
+  }
+
+  @media (max-width: 550px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.small};
+
+      h1 {
+        font-size: ${theme.font.sizes.small};
+      }
+    `}
+  }
+
+  @media (max-width: 450px) {
+    ${({theme}) => css`
+      font-size: ${theme.font.sizes.xsmall};
+
+      h1 {
+        font-size: ${theme.font.sizes.xsmall};
+      }
+    `}
+  }
+`;

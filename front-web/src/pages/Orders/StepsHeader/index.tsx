@@ -17,7 +17,6 @@ const StepsHeader = () => {
               <span>Depois clique em <strong>"Enviar pedido"</strong></span>
             </S.Step>
           </S.StepsContainer>
-          <S.ButtonStatus />
         </S.Wrapper>
       </S.Container>
   ) 
