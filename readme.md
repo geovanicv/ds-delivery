@@ -22,3 +22,6 @@ O backend do sistema consiste em uma API REST que expõem 4 endpoints com as seg
   - Typescript
   - React Native
 
+
+---
+Made with :purple_heart: by Geovani Cavalcante :wave: [Get in touch!](https://www.linkedin.com/in/geovani-cv/)
